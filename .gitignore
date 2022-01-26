@@ -1,0 +1,10 @@
+node_modules/
+
+.env
+
+# use npm instead
+yarn.lock
+
+.idea
+
+/dist

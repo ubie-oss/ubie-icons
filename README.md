@@ -1,0 +1,23 @@
+# Ubie Icons
+
+## Installation
+
+```
+// with npm
+npm install @ubie/ubie-icons
+
+// with yarn
+yarn add @ubie/ubie-icons
+```
+
+## Usage
+
+```js
+import { Twitter } from '@ubie/ubie-icons';
+
+export const TwitterButton = () => (
+  <button type="button"><Twitter />Twitter</button>
+)
+```
+
+`currentColor` is set for the icon's path, so you can change the color using CSS.

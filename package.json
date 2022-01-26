@@ -1,0 +1,35 @@
+{
+  "name": "@ubie/ubie-icons",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ubie-oss/ubie-icons.git"
+  },
+  "version": "0.1.0",
+  "description": "Icons used in Ubie products.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "figma": "node ./scripts/figma.js",
+    "build:svg": "svgr -d src assets",
+    "build:ts": "tsc",
+    "build": "yarn build:svg && yarn build:ts",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@svgr/cli": "^5.5.0",
+    "@types/react": "^17.0.22",
+    "got": "^11.8.2",
+    "request": "^2.88.2",
+    "typescript": "^4.4.3"
+  },
+  "dependencies": {
+    "react": "^17.0.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT"
+}

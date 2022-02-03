@@ -4,7 +4,7 @@
     "type": "git",
     "url": "https://github.com/ubie-oss/ubie-icons.git"
   },
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Icons used in Ubie products.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

@@ -1,15 +1,8 @@
-import * as React from "react";
+import * as React from 'react';
 
 function SvgPhone(props: React.SVGProps<SVGSVGElement>) {
   return (
-    <svg
-      width="1em"
-      height="1em"
-      viewBox="0 0 24 24"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
+    <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
       <path
         d="M3 3H7.23529L8.29412 6.375L4.05882 9.70889C5.63941 14.4192 9.04523 18.4142 14.6471 20.1181L17.8235 15.375L21 16.5V21C18.6288 21 16.5157 20.6866 14.6471 20.1181C9.04523 18.4142 5.63941 14.4192 4.05882 9.70889C3.34138 7.57084 3 5.28542 3 3Z"
         fill="currentColor"

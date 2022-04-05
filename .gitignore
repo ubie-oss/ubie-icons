@@ -7,4 +7,6 @@ yarn.lock
 
 .idea
 
-/dist
+dist/
+
+storybook-static/

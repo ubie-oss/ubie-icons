@@ -1,0 +1,29 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 120px);
+  gap: 1.5rem 1rem;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  padding: 1.5rem 0.5rem;
+}
+
+.item svg {
+  color: #3959CC;
+  font-size: 2.5rem;
+}
+
+.title {
+  font-size: 0.75rem;
+  margin: 0;
+  line-height: 1.5;
+  height: 2.25rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #2A2F39;
+}

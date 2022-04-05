@@ -1,5 +1,5 @@
 import React from 'react';
-import * as IconComponents from '../index';
+import * as IconComponents from '../src/index';
 import './Icons.css'
 
 const pascalToSentence = (text: string): string => {

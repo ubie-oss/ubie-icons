@@ -1,6 +1,6 @@
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 120px);
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
   gap: 1.5rem 1rem;
 }
 
@@ -26,4 +26,5 @@
   align-items: center;
   text-align: center;
   color: #2A2F39;
+  word-break: break-all;
 }

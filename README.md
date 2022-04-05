@@ -1,5 +1,6 @@
 # Ubie Icons
 
+Storybook: https://ubie-oss.github.io/ubie-icons/storybook-static/
 ## Installation
 
 ```

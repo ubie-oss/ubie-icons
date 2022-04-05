@@ -1,0 +1,27 @@
+name: Deploy storybook
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    name: Deploy storybook
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+      
+      - run: npm install
+
+      - name: Generate Storybook
+        run: npm run build:storybook
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: storybook-static
+          destination_dir: storybook-static

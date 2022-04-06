@@ -3,9 +3,6 @@ name: Publish periodically
 on:
   schedule:
     - cron:  '* 18 * * *' # 3:00 AM JST every day
-  push:
-    branches:
-      - 'main'
 
 jobs:
   release:

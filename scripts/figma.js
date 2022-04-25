@@ -36,7 +36,7 @@ const main = async () => {
     const url = images[nodeId];
     const result = results.find((r) => r.node_id === nodeId);
     const name = result.name;
-    const path = resolve(__dirname, `../assets/${name}.svg`);
+    const path = resolve(__dirname, `../assets/${name}-icon.svg`);
     download(url, path, () => {
       console.log(path, 'done!');
     });

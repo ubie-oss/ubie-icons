@@ -3,7 +3,10 @@ import * as React from 'react';
 function SvgWalkIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
-      <circle cx={14} cy={4} r={2} fill="currentColor" />
+      <path
+        d="M16 4C16 5.10457 15.1046 6 14 6C12.8954 6 12 5.10457 12 4C12 2.89543 12.8954 2 14 2C15.1046 2 16 2.89543 16 4Z"
+        fill="currentColor"
+      />
       <path
         fillRule="evenodd"
         clipRule="evenodd"

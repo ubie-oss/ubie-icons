@@ -10,7 +10,7 @@ function SvgCopyIcon(props: React.SVGProps<SVGSVGElement>) {
       <path
         fillRule="evenodd"
         clipRule="evenodd"
-        d="M7 8C7 6.89543 7.89543 6 9 6H19C20.1046 6 21 6.89543 21 8V20C21 21.1046 20.1046 22 19 22H9C7.89543 22 7 21.1046 7 20V8ZM9 8H19V20H9V8Z"
+        d="M7 8C7 6.89543 7.89543 6 9 6H19C20.1046 6 21 6.89543 21 8V20C21 21.1046 20.1046 22 19 22H9C7.89543 22 7 21.1046 7 20V8ZM9 8H14H19V20H9V8Z"
         fill="currentColor"
       />
     </svg>

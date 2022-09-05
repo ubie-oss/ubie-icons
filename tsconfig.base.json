@@ -99,6 +99,7 @@
   },
   "exclude": [
     "stories",
-    "**/*.stories.tsx"
+    "**/*.stories.tsx",
+    "dist"
   ]
 }

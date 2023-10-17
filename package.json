@@ -4,7 +4,7 @@
     "type": "git",
     "url": "https://github.com/ubie-oss/ubie-icons.git"
   },
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Icons used in Ubie products.",
   "exports": {
     "browser": "./dist/esm/index.js",
@@ -25,7 +25,8 @@
     "build:ts": "run-p build:ts:*",
     "build:ts:esm": "tsc --project tsconfig.esm.json",
     "build:ts:cjs": "tsc --project tsconfig.cjs.json",
-    "build": "yarn build:svg && yarn build:ts",
+    "build:copy-svgs": "test -d dist || mkdir dist && cp -R assets/*.svg dist",
+    "build": "yarn build:svg && yarn build:ts && yarn build:copy-svgs",
     "prepublishOnly": "npm run build",
     "storybook": "start-storybook -p 6006",
     "build:storybook": "build-storybook"

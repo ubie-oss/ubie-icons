@@ -1,0 +1,19 @@
+import Svg, { Path } from 'react-native-svg';
+import type { SvgProps } from 'react-native-svg';
+interface ISvgProps extends SvgProps {
+  xmlns?: string;
+  xmlnsXlink?: string;
+  xmlSpace?: string;
+}
+const SvgCopyIcon = (props: ISvgProps) => (
+  <Svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} fill="none" viewBox="0 0 24 24" {...props}>
+    <Path fill="currentColor" d="M5 5a1 1 0 0 1 1-1h9a1 1 0 1 0 0-2H6a3 3 0 0 0-3 3v11a1 1 0 1 0 2 0z" />
+    <Path
+      fill="currentColor"
+      fillRule="evenodd"
+      d="M7 8a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2zm2 0h10v12H9z"
+      clipRule="evenodd"
+    />
+  </Svg>
+);
+export default SvgCopyIcon;

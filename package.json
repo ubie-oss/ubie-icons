@@ -21,7 +21,9 @@
   ],
   "scripts": {
     "figma": "node ./scripts/figma.js",
-    "build:svg": "svgr -d src assets",
+    "build:svg": "run-p build:svg:*",
+    "build:svg:web": "svgr -d src assets",
+    "build:svg:native": "svgr --native --template native-template.js -d src/native assets",
     "build:ts": "tsup",
     "build:copy-svgs": "test -d dist || mkdir dist && cp -R assets/*.svg dist",
     "build": "yarn build:svg && yarn build:ts && yarn build:copy-svgs",
@@ -45,6 +47,7 @@
     "prettier": "^2.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-native-svg": "^15.1.0",
     "storybook": "^8.0.2",
     "tsup": "^8.0.2",
     "typescript": "^5.4.2"
@@ -52,7 +55,8 @@
   "peerDependencies": {
     "@types/react": "^17 || ^18",
     "react": "^17 || ^18",
-    "react-dom": "^17 || ^18"
+    "react-dom": "^17 || ^18",
+    "react-native-svg": "^15.1.0"
   },
   "peerDependenciesMeta": {
     "@types/react": {

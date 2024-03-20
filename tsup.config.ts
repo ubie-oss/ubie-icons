@@ -22,6 +22,8 @@ export default defineConfig({
 });
 
 function addMjsExtension(content) {
-  // This regex looks for relative import paths that don't have a file extension
-  return content.replace(/from\s+['"](\.\/|\.\.\/)(?![^'"\s]+?\/)['"]([^'"\s]+?)['"];/g, "from '$1$2.mjs';");
+  return content.replace(
+    /import\s+\{\s*default\s+as\s+(default\d+)\s*\}\s+from\s+"\.\/([^"]+)"/g,
+    `import { default as $1 } from "./$2.mjs"`,
+  );
 }

@@ -27,10 +27,10 @@ jobs:
 
       - name: Install dependencies
         run: |
-          npm i
+          npm ci
 
       - name: figma
-        run: yarn run figma
+        run: npm run figma
         env:
           FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
           FIGMA_FILE_KEY: ${{ secrets.FIGMA_FILE_KEY }}

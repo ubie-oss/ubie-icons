@@ -1,17 +1,13 @@
-import * as React from 'react';
-
-function SvgHospitalIcon(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
-      <path d="M13 10.5V9H14.5V7H13V5.5L11 5.5V7H9.5V9H11V10.5H13Z" fill="currentColor" />
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M4 22C2.89543 22 2 21.1046 2 20V9C2 7.89543 2.89543 7 4 7H5.5V4C5.5 2.89543 6.39543 2 7.5 2H16.5C17.6046 2 18.5 2.89543 18.5 4V7H20C21.1046 7 22 7.89543 22 9V20C22 21.1046 21.1046 22 20 22H4ZM4 9H7.5V4L16.5 4V9H20V20H16V14C16 13.4477 15.5523 13 15 13H9C8.44772 13 8 13.4477 8 14V20H4V9ZM10 20H14V15H10V20Z"
-        fill="currentColor"
-      />
-    </svg>
-  );
-}
-
+import type { SVGProps } from 'react';
+const SvgHospitalIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" viewBox="0 0 24 24" {...props}>
+    <path fill="currentColor" d="M13 10.5V9h1.5V7H13V5.5h-2V7H9.5v2H11v1.5z" />
+    <path
+      fill="currentColor"
+      fillRule="evenodd"
+      d="M4 22a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h1.5V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v3H20a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2zM4 9h3.5V4h9v5H20v11h-4v-6a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v6H4zm6 11h4v-5h-4z"
+      clipRule="evenodd"
+    />
+  </svg>
+);
 export default SvgHospitalIcon;

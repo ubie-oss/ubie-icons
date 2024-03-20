@@ -1,20 +1,16 @@
-import * as React from 'react';
-
-function SvgCloseBIcon(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
-      <path
-        d="M8.29274 14.2929L10.5857 12L8.29289 9.7072C7.90237 9.31668 7.90237 8.68351 8.29289 8.29299C8.68342 7.90246 9.31658 7.90246 9.70711 8.29299L11.9999 10.5858L14.2927 8.29289C14.6833 7.90237 15.3164 7.90237 15.707 8.29289C16.0975 8.68342 16.0975 9.31658 15.707 9.70711L13.4141 12L15.7071 14.293C16.0976 14.6835 16.0976 15.3167 15.7071 15.7072C15.3166 16.0977 14.6834 16.0977 14.2929 15.7072L11.9999 13.4142L9.70695 15.7071C9.31643 16.0976 8.68327 16.0976 8.29274 15.7071C7.90222 15.3166 7.90222 14.6834 8.29274 14.2929Z"
-        fill="currentColor"
-      />
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12Z"
-        fill="currentColor"
-      />
-    </svg>
-  );
-}
-
+import type { SVGProps } from 'react';
+const SvgCloseBIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" viewBox="0 0 24 24" {...props}>
+    <path
+      fill="currentColor"
+      d="M8.293 14.293 10.586 12 8.293 9.707a1 1 0 0 1 1.414-1.414L12 10.586l2.293-2.293a1 1 0 0 1 1.414 1.414L13.414 12l2.293 2.293a1 1 0 0 1-1.414 1.414L12 13.414l-2.293 2.293a1 1 0 0 1-1.414-1.414"
+    />
+    <path
+      fill="currentColor"
+      fillRule="evenodd"
+      d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10m-2 0a8 8 0 1 1-16 0 8 8 0 0 1 16 0"
+      clipRule="evenodd"
+    />
+  </svg>
+);
 export default SvgCloseBIcon;

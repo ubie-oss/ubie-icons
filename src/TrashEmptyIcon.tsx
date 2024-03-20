@@ -1,16 +1,12 @@
-import * as React from 'react';
-
-function SvgTrashEmptyIcon(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M17 6V4C17 2.89543 16.1046 2 15 2H9C7.89543 2 7 2.89543 7 4V6H4C3.44772 6 3 6.44772 3 7C3 7.55228 3.44772 8 4 8H5V20C5 21.1046 5.89543 22 7 22H17C18.1046 22 19 21.1046 19 20V8H20C20.5523 8 21 7.55228 21 7C21 6.44772 20.5523 6 20 6H17ZM15 4H9V6H15V4ZM17 8H7V20H17V8Z"
-        fill="currentColor"
-      />
-    </svg>
-  );
-}
-
+import type { SVGProps } from 'react';
+const SvgTrashEmptyIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" viewBox="0 0 24 24" {...props}>
+    <path
+      fill="currentColor"
+      fillRule="evenodd"
+      d="M17 6V4a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v2H4a1 1 0 0 0 0 2h1v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8h1a1 1 0 1 0 0-2zm-2-2H9v2h6zm2 4H7v12h10z"
+      clipRule="evenodd"
+    />
+  </svg>
+);
 export default SvgTrashEmptyIcon;

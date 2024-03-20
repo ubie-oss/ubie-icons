@@ -1,14 +1,10 @@
-import * as React from 'react';
-
-function SvgArrowADownIcon(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
-      <path
-        d="M11.2033 21.5848C11.5997 22.1391 12.4241 22.1383 12.8194 21.5831L17.8143 14.568C18.2821 13.911 17.8123 13 17.0057 13L15 13V3C15 2.44771 14.5523 2 14 2H10C9.44772 2 9 2.44771 9 3L9 13H6.99433C6.18679 13 5.71722 13.9128 6.1869 14.5696L11.2033 21.5848Z"
-        fill="currentColor"
-      />
-    </svg>
-  );
-}
-
+import type { SVGProps } from 'react';
+const SvgArrowADownIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" viewBox="0 0 24 24" {...props}>
+    <path
+      fill="currentColor"
+      d="M11.203 21.585a.993.993 0 0 0 1.616-.002l4.995-7.015A.992.992 0 0 0 17.006 13H15V3a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v10H6.994a.992.992 0 0 0-.807 1.57z"
+    />
+  </svg>
+);
 export default SvgArrowADownIcon;

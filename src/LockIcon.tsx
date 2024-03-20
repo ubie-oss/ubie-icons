@@ -1,20 +1,13 @@
-import * as React from 'react';
-
-function SvgLockIcon(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
-      <path
-        d="M12 17.5C13.1046 17.5 14 16.6046 14 15.5C14 14.3954 13.1046 13.5 12 13.5C10.8954 13.5 10 14.3954 10 15.5C10 16.6046 10.8954 17.5 12 17.5Z"
-        fill="currentColor"
-      />
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M7 7V9H6C4.89543 9 4 9.89543 4 11V20C4 21.1046 4.89543 22 6 22H18C19.1046 22 20 21.1046 20 20V11C20 9.89543 19.1046 9 18 9H17V7C17 4.5314 15.1324 2 12 2C8.86759 2 7 4.5314 7 7ZM12 4C10.1324 4 9 5.4686 9 7V9H15V7C15 5.4686 13.8676 4 12 4ZM6 11V20H18V11H6Z"
-        fill="currentColor"
-      />
-    </svg>
-  );
-}
-
+import type { SVGProps } from 'react';
+const SvgLockIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" viewBox="0 0 24 24" {...props}>
+    <path fill="currentColor" d="M12 17.5a2 2 0 1 0 0-4 2 2 0 0 0 0 4" />
+    <path
+      fill="currentColor"
+      fillRule="evenodd"
+      d="M7 7v2H6a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2h-1V7c0-2.469-1.868-5-5-5S7 4.531 7 7m5-3c-1.868 0-3 1.469-3 3v2h6V7c0-1.531-1.132-3-3-3m-6 7v9h12v-9z"
+      clipRule="evenodd"
+    />
+  </svg>
+);
 export default SvgLockIcon;

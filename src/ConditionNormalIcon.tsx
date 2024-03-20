@@ -1,28 +1,16 @@
-import * as React from 'react';
-
-function SvgConditionNormalIcon(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
-      <path
-        d="M9.25 11.5C9.94036 11.5 10.5 10.9404 10.5 10.25C10.5 9.55964 9.94036 9 9.25 9C8.55964 9 8 9.55964 8 10.25C8 10.9404 8.55964 11.5 9.25 11.5Z"
-        fill="currentColor"
-      />
-      <path
-        d="M16 10.25C16 10.9404 15.4404 11.5 14.75 11.5C14.0596 11.5 13.5 10.9404 13.5 10.25C13.5 9.55964 14.0596 9 14.75 9C15.4404 9 16 9.55964 16 10.25Z"
-        fill="currentColor"
-      />
-      <path
-        d="M10 14C9.44772 14 9 14.4477 9 15C9 15.5523 9.44772 16 10 16H14C14.5523 16 15 15.5523 15 15C15 14.4477 14.5522 14 13.9999 14H10Z"
-        fill="currentColor"
-      />
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12Z"
-        fill="currentColor"
-      />
-    </svg>
-  );
-}
-
+import type { SVGProps } from 'react';
+const SvgConditionNormalIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" viewBox="0 0 24 24" {...props}>
+    <path
+      fill="currentColor"
+      d="M9.25 11.5a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5M16 10.25a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0M10 14a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2z"
+    />
+    <path
+      fill="currentColor"
+      fillRule="evenodd"
+      d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10m-2 0a8 8 0 1 1-16 0 8 8 0 0 1 16 0"
+      clipRule="evenodd"
+    />
+  </svg>
+);
 export default SvgConditionNormalIcon;

@@ -1,20 +1,16 @@
-import * as React from 'react';
-
-function SvgSecurityIcon(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
-      <path
-        d="M16.2071 9.70711C16.5977 9.31658 16.5977 8.68342 16.2071 8.29289C15.8166 7.90237 15.1835 7.90237 14.7929 8.29289L11.4258 11.66L9.62473 10.2191C9.19347 9.87412 8.56418 9.94404 8.21917 10.3753C7.87416 10.8066 7.94408 11.4359 8.37534 11.7809L10.8753 13.7809C11.2732 14.0992 11.8468 14.0674 12.2071 13.7071L16.2071 9.70711Z"
-        fill="currentColor"
-      />
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M12.2425 2.02986C12.0833 1.99005 11.9167 1.99005 11.7575 2.02986L3.75746 4.02986C3.3123 4.14115 3 4.54113 3 5V11C3 17.6208 8.84847 20.5431 11.4668 21.8514L11.5528 21.8944C11.8201 22.0281 12.1331 22.0352 12.4061 21.9138C15.3923 20.5866 21 17.6854 21 11V5C21 4.54113 20.6877 4.14115 20.2425 4.02986L12.2425 2.02986ZM5 11V5.78078L12 4.03078L19 5.78078V11C19 16.0675 15.0067 18.5143 12.0226 19.8921C9.23357 18.4783 5 16.0422 5 11Z"
-        fill="currentColor"
-      />
-    </svg>
-  );
-}
-
+import type { SVGProps } from 'react';
+const SvgSecurityIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" viewBox="0 0 24 24" {...props}>
+    <path
+      fill="currentColor"
+      d="M16.207 9.707a1 1 0 1 0-1.414-1.414l-3.367 3.367-1.801-1.44a1 1 0 0 0-1.25 1.56l2.5 2a1 1 0 0 0 1.332-.073z"
+    />
+    <path
+      fill="currentColor"
+      fillRule="evenodd"
+      d="M12.243 2.03a1 1 0 0 0-.486 0l-8 2A1 1 0 0 0 3 5v6c0 6.62 5.848 9.543 8.467 10.851l.086.043a1 1 0 0 0 .853.02C15.392 20.587 21 17.685 21 11V5a1 1 0 0 0-.758-.97zM5 11V5.78l7-1.75 7 1.75V11c0 5.067-3.993 7.514-6.977 8.892C9.233 18.478 5 16.042 5 11"
+      clipRule="evenodd"
+    />
+  </svg>
+);
 export default SvgSecurityIcon;

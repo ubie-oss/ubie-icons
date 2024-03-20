@@ -8,5 +8,6 @@ yarn.lock
 .idea
 
 dist/
+native/
 
 storybook-static/

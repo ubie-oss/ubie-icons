@@ -1,16 +1,12 @@
-import * as React from 'react';
-
-function SvgMailOutlineIcon(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M2 7C2 5.89543 2.89543 5 4 5H20C21.1046 5 22 5.89543 22 7V17C22 18.1046 21.1046 19 20 19H4C2.89543 19 2 18.1046 2 17V7ZM18.3333 7H5.66667L12 11.75L18.3333 7ZM4 8.25V17H20V8.25L12.6 13.8C12.2444 14.0667 11.7556 14.0667 11.4 13.8L4 8.25Z"
-        fill="currentColor"
-      />
-    </svg>
-  );
-}
-
+import type { SVGProps } from 'react';
+const SvgMailOutlineIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" viewBox="0 0 24 24" {...props}>
+    <path
+      fill="currentColor"
+      fillRule="evenodd"
+      d="M2 7a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm16.333 0H5.667L12 11.75zM4 8.25V17h16V8.25l-7.4 5.55a1 1 0 0 1-1.2 0z"
+      clipRule="evenodd"
+    />
+  </svg>
+);
 export default SvgMailOutlineIcon;

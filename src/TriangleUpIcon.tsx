@@ -1,14 +1,10 @@
-import * as React from 'react';
-
-function SvgTriangleUpIcon(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
-      <path
-        d="M11.1251 4.49889L3.12061 18.6039C2.7624 19.2351 3.24512 20 4.00171 20H19.9983C20.7546 20 21.2373 19.2357 20.8797 18.6044L12.8876 4.49943C12.5104 3.83377 11.5027 3.83346 11.1251 4.49889Z"
-        fill="currentColor"
-      />
-    </svg>
-  );
-}
-
+import type { SVGProps } from 'react';
+const SvgTriangleUpIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" viewBox="0 0 24 24" {...props}>
+    <path
+      fill="currentColor"
+      d="M11.125 4.499 3.121 18.604C2.762 19.235 3.245 20 4 20h15.997c.757 0 1.24-.764.882-1.396L12.888 4.5c-.378-.665-1.385-.666-1.763 0"
+    />
+  </svg>
+);
 export default SvgTriangleUpIcon;

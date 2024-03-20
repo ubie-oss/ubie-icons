@@ -1,16 +1,12 @@
-import * as React from 'react';
-
-function SvgBookmarkOutlineIcon(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M8 4C7.44772 4 7 4.44772 7 5V20.3027L11.5153 17.8004C11.8168 17.6333 12.1832 17.6333 12.4847 17.8004L17 20.3027V5C17 4.44772 16.5523 4 16 4H8ZM5 5C5 3.34315 6.34315 2 8 2H16C17.6569 2 19 3.34315 19 5V22C19 22.5523 18.5523 23 18 23C17.8304 23 17.6634 22.9569 17.5151 22.8747L12 19.8184L6.4849 22.8747C6.33657 22.9569 6.16977 23 6.00019 23C5.4479 23 5 22.5523 5 22V5Z"
-        fill="currentColor"
-      />
-    </svg>
-  );
-}
-
+import type { SVGProps } from 'react';
+const SvgBookmarkOutlineIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" viewBox="0 0 24 24" {...props}>
+    <path
+      fill="currentColor"
+      fillRule="evenodd"
+      d="M8 4a1 1 0 0 0-1 1v15.303l4.515-2.503a1 1 0 0 1 .97 0L17 20.303V5a1 1 0 0 0-1-1zM5 5a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v17a1 1 0 0 1-1.485.875L12 19.818l-5.515 3.057A1 1 0 0 1 5 22z"
+      clipRule="evenodd"
+    />
+  </svg>
+);
 export default SvgBookmarkOutlineIcon;

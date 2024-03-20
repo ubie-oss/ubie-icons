@@ -1,16 +1,12 @@
-import * as React from 'react';
-
-function SvgPinIcon(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M17.9998 8.2961C17.9998 12.8859 14.8029 18.3613 12.8693 21.5217C12.4753 22.1657 11.5314 22.1557 11.1555 21.5009C6.87887 14.0506 5.93425 9.91669 6.00346 8.51183C6.00116 8.44022 6 8.3683 6 8.2961C6 4.81886 8.68624 2 11.9999 2C15.3135 2 17.9998 4.81886 17.9998 8.2961ZM12 11.0303C13.6569 11.0303 15 9.68262 15 8.02019C15 6.35776 13.6569 5.01009 12 5.01009C10.3431 5.01009 9 6.35776 9 8.02019C9 9.68262 10.3431 11.0303 12 11.0303Z"
-        fill="currentColor"
-      />
-    </svg>
-  );
-}
-
+import type { SVGProps } from 'react';
+const SvgPinIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" viewBox="0 0 24 24" {...props}>
+    <path
+      fill="currentColor"
+      fillRule="evenodd"
+      d="M18 8.296c0 4.59-3.197 10.065-5.13 13.226a.997.997 0 0 1-1.714-.021C6.879 14.05 5.934 9.917 6.003 8.51L6 8.297C6 4.82 8.686 2 12 2s6 2.819 6 6.296m-6 2.734c1.657 0 3-1.347 3-3.01a3.005 3.005 0 0 0-3-3.01c-1.657 0-3 1.348-3 3.01a3.005 3.005 0 0 0 3 3.01"
+      clipRule="evenodd"
+    />
+  </svg>
+);
 export default SvgPinIcon;

@@ -1,26 +1,10 @@
-import * as React from 'react';
-
-function SvgCropIcon(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
-      <path
-        d="M2 3C2 2.73478 2.10536 2.48043 2.29289 2.29289C2.48043 2.10536 2.73478 2 3 2H8C8.55228 2 9 2.44772 9 3C9 3.55228 8.55228 4 8 4L4 4V8C4 8.55228 3.55228 9 3 9C2.44771 9 2 8.55229 2 8V3Z"
-        fill="currentColor"
-      />
-      <path
-        d="M22 3C22 2.73478 21.8946 2.48043 21.7071 2.29289C21.5196 2.10536 21.2652 2 21 2H16C15.4477 2 15 2.44772 15 3C15 3.55228 15.4477 4 16 4L20 4V8C20 8.55228 20.4477 9 21 9C21.5523 9 22 8.55229 22 8V3Z"
-        fill="currentColor"
-      />
-      <path
-        d="M2.29289 21.7073C2.10536 21.5198 2 21.2654 2 21.0002V16.0002C2 15.4479 2.44771 15.0002 3 15.0002C3.55228 15.0002 4 15.4479 4 16.0002V20.0002H8C8.55228 20.0002 9 20.4479 9 21.0002C9 21.5525 8.55228 22.0002 8 22.0002H3C2.73478 22.0002 2.48043 21.8948 2.29289 21.7073Z"
-        fill="currentColor"
-      />
-      <path
-        d="M22 21.0002C22 21.2654 21.8946 21.5198 21.7071 21.7073C21.5196 21.8948 21.2652 22.0002 21 22.0002H16C15.4477 22.0002 15 21.5525 15 21.0002C15 20.4479 15.4477 20.0002 16 20.0002H20V16.0002C20 15.4479 20.4477 15.0002 21 15.0002C21.5523 15.0002 22 15.4479 22 16.0002V21.0002Z"
-        fill="currentColor"
-      />
-    </svg>
-  );
-}
-
+import type { SVGProps } from 'react';
+const SvgCropIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" viewBox="0 0 24 24" {...props}>
+    <path
+      fill="currentColor"
+      d="M2 3a1 1 0 0 1 1-1h5a1 1 0 0 1 0 2H4v4a1 1 0 0 1-2 0zM22 3a1 1 0 0 0-1-1h-5a1 1 0 1 0 0 2h4v4a1 1 0 1 0 2 0zM2.293 21.707A1 1 0 0 1 2 21v-5a1 1 0 1 1 2 0v4h4a1 1 0 1 1 0 2H3a1 1 0 0 1-.707-.293M22 21a1 1 0 0 1-1 1h-5a1 1 0 1 1 0-2h4v-4a1 1 0 1 1 2 0z"
+    />
+  </svg>
+);
 export default SvgCropIcon;

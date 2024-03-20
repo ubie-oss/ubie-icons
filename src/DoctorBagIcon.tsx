@@ -1,20 +1,13 @@
-import * as React from 'react';
-
-function SvgDoctorBagIcon(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
-      <path
-        d="M12.7499 14.2502V15.75H11.2499V14.2502H9.75V12.7502H11.2499V11.25H12.7499V12.7502H14.25V14.2502H12.7499Z"
-        fill="currentColor"
-      />
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M7 6V5C7 3.89543 7.89543 3 9 3H15C16.1046 3 17 3.89543 17 5V6H20C21.1046 6 22 6.89543 22 8V19C22 20.1046 21.1046 21 20 21H4C2.89543 21 2 20.1046 2 19V8C2 6.89543 2.89543 6 4 6H7ZM9 5H15V6H9V5ZM4 8L4 9.25L20 9.25V8H4ZM4 16.25L4 10.75L20 10.75V16.25L4 16.25ZM4 17.75V19H20V17.75L4 17.75Z"
-        fill="currentColor"
-      />
-    </svg>
-  );
-}
-
+import type { SVGProps } from 'react';
+const SvgDoctorBagIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" viewBox="0 0 24 24" {...props}>
+    <path fill="currentColor" d="M12.75 14.25v1.5h-1.5v-1.5h-1.5v-1.5h1.5v-1.5h1.5v1.5h1.5v1.5z" />
+    <path
+      fill="currentColor"
+      fillRule="evenodd"
+      d="M7 6V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1h3a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2zm2-1h6v1H9zM4 8v1.25h16V8zm0 8.25v-5.5h16v5.5zm0 1.5V19h16v-1.25z"
+      clipRule="evenodd"
+    />
+  </svg>
+);
 export default SvgDoctorBagIcon;

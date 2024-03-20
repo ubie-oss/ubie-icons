@@ -1,18 +1,11 @@
-import * as React from 'react';
-
-function SvgEditIcon(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
-      <path
-        d="M4 2H11.0005V4H4V20L19 20V12.9998H21V20C21 21.1046 20.1046 22 19 22L4 22C2.89543 22 2 21.1046 2 20V4C2 2.89543 2.89543 2 4 2Z"
-        fill="currentColor"
-      />
-      <path
-        d="M20.3072 2.3072C19.9167 1.91668 19.2835 1.91668 18.893 2.3072L11.2587 9.94145C11.1638 10.0364 11.0889 10.1496 11.0386 10.2741L10.2433 12.2437C9.9346 13.0081 10.6316 13.7967 11.4282 13.5843L13.6837 12.983C13.8537 12.9377 14.0088 12.8483 14.1332 12.7239L21.7214 5.13563C22.1119 4.74511 22.1119 4.11194 21.7214 3.72142L20.3072 2.3072Z"
-        fill="currentColor"
-      />
-    </svg>
-  );
-}
-
+import type { SVGProps } from 'react';
+const SvgEditIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" viewBox="0 0 24 24" {...props}>
+    <path fill="currentColor" d="M4 2h7v2H4v16h15v-7h2v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2" />
+    <path
+      fill="currentColor"
+      d="M20.307 2.307a1 1 0 0 0-1.414 0l-7.634 7.634c-.095.095-.17.209-.22.333l-.796 1.97a1 1 0 0 0 1.185 1.34l2.256-.601a1 1 0 0 0 .45-.26l7.587-7.587a1 1 0 0 0 0-1.415z"
+    />
+  </svg>
+);
 export default SvgEditIcon;

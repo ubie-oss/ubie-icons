@@ -1,14 +1,10 @@
-import * as React from 'react';
-
-function SvgArrowDLeftIcon(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
-      <path
-        d="M6.36633 11.2541C5.87783 11.6521 5.8779 12.3518 6.36648 12.7497L16.1836 20.7458C16.8875 21.3192 18 20.8611 18 19.9979L18 4.0028C18 3.13954 16.8873 2.68152 16.1834 3.25503L6.36633 11.2541Z"
-        fill="currentColor"
-      />
-    </svg>
-  );
-}
-
+import type { SVGProps } from 'react';
+const SvgArrowDLeftIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" viewBox="0 0 24 24" {...props}>
+    <path
+      fill="currentColor"
+      d="M6.366 11.254a.946.946 0 0 0 0 1.496l9.818 7.996c.703.573 1.816.115 1.816-.748V4.003c0-.863-1.113-1.321-1.817-.748z"
+    />
+  </svg>
+);
 export default SvgArrowDLeftIcon;

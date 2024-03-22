@@ -26,7 +26,7 @@
     "build:ts:esm": "tsc --project tsconfig.esm.json",
     "build:ts:cjs": "tsc --project tsconfig.cjs.json",
     "build:copy-svgs": "test -d dist || mkdir dist && cp -R assets/*.svg dist",
-    "build": "yarn build:svg && yarn build:ts && yarn build:copy-svgs",
+    "build": "npm run build:svg && npm run build:ts && npm run build:copy-svgs",
     "prepublishOnly": "npm run build",
     "storybook": "start-storybook -p 6006",
     "build:storybook": "build-storybook"

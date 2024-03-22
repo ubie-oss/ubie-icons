@@ -15,7 +15,7 @@ jobs:
         with:
           persist-credentials: false
 
-      - run: npm install
+      - run: npm ci
 
       - name: Generate Storybook
         run: npm run build:storybook

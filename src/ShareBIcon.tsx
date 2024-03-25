@@ -1,16 +1,12 @@
-import * as React from 'react';
-
-function SvgShareBIcon(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M18 9C19.933 9 21.5 7.433 21.5 5.5C21.5 3.567 19.933 2 18 2C16.067 2 14.5 3.567 14.5 5.5C14.5 5.74629 14.5254 5.98664 14.5738 6.21856L8.47295 9.52321C7.83973 8.89096 6.96552 8.5 6 8.5C4.067 8.5 2.5 10.067 2.5 12C2.5 13.933 4.067 15.5 6 15.5C6.96552 15.5 7.83973 15.109 8.47295 14.4768L14.5738 17.7814C14.5254 18.0134 14.5 18.2537 14.5 18.5C14.5 20.433 16.067 22 18 22C19.933 22 21.5 20.433 21.5 18.5C21.5 16.567 19.933 15 18 15C17.0345 15 16.1603 15.391 15.527 16.0232L9.42617 12.7186C9.47456 12.4866 9.5 12.2463 9.5 12C9.5 11.7537 9.47456 11.5134 9.42617 11.2814L15.527 7.97679C16.1603 8.60904 17.0345 9 18 9Z"
-        fill="currentColor"
-      />
-    </svg>
-  );
-}
-
+import type { SVGProps } from 'react';
+const SvgShareBIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" viewBox="0 0 24 24" {...props}>
+    <path
+      fill="currentColor"
+      fillRule="evenodd"
+      d="M18 9a3.5 3.5 0 1 0-3.426-2.781L8.473 9.523a3.5 3.5 0 1 0 0 4.954l6.1 3.304a3.5 3.5 0 1 0 .953-1.758l-6.1-3.304a3.5 3.5 0 0 0 0-1.438l6.101-3.304A3.5 3.5 0 0 0 18 9"
+      clipRule="evenodd"
+    />
+  </svg>
+);
 export default SvgShareBIcon;

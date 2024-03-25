@@ -1,24 +1,16 @@
-import * as React from 'react';
-
-function SvgInformationIcon(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
-      <path
-        d="M11 12C11 11.4477 11.4477 11 12 11C12.5523 11 13 11.4477 13 12V16C13 16.5523 12.5523 17 12 17C11.4477 17 11 16.5523 11 16V12Z"
-        fill="currentColor"
-      />
-      <path
-        d="M12 7C11.3096 7 10.75 7.55964 10.75 8.25C10.75 8.94036 11.3096 9.5 12 9.5C12.6904 9.5 13.25 8.94036 13.25 8.25C13.25 7.55964 12.6904 7 12 7Z"
-        fill="currentColor"
-      />
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
-        fill="currentColor"
-      />
-    </svg>
-  );
-}
-
+import type { SVGProps } from 'react';
+const SvgInformationIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" viewBox="0 0 24 24" {...props}>
+    <path
+      fill="currentColor"
+      d="M11 12a1 1 0 1 1 2 0v4a1 1 0 1 1-2 0zM12 7a1.25 1.25 0 1 0 0 2.5A1.25 1.25 0 0 0 12 7"
+    />
+    <path
+      fill="currentColor"
+      fillRule="evenodd"
+      d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10m0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16"
+      clipRule="evenodd"
+    />
+  </svg>
+);
 export default SvgInformationIcon;

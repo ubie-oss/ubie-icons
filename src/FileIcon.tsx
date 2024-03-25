@@ -1,16 +1,12 @@
-import * as React from 'react';
-
-function SvgFileIcon(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M18 4L6 4L6 20H13V14H18L18 4ZM20 16.9142L14.9142 22H5C4.44771 22 4 21.5523 4 21V3C4 2.44772 4.44772 2 5 2H19C19.5523 2 20 2.44772 20 3V16.9142ZM18 16.0858V16H15V19.0858L18 16.0858Z"
-        fill="currentColor"
-      />
-    </svg>
-  );
-}
-
+import type { SVGProps } from 'react';
+const SvgFileIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" viewBox="0 0 24 24" {...props}>
+    <path
+      fill="currentColor"
+      fillRule="evenodd"
+      d="M18 4H6v16h7v-6h5zm2 12.914L14.914 22H5a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1zm-2-.828V16h-3v3.086z"
+      clipRule="evenodd"
+    />
+  </svg>
+);
 export default SvgFileIcon;

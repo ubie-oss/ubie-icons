@@ -1,26 +1,10 @@
-import * as React from 'react';
-
-function SvgGenderHumanIcon(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
-      <path
-        d="M9 5C9 6.10457 8.10457 7 7 7C5.89543 7 5 6.10457 5 5C5 3.89543 5.89543 3 7 3C8.10457 3 9 3.89543 9 5Z"
-        fill="currentColor"
-      />
-      <path
-        d="M19 5C19 6.10457 18.1046 7 17 7C15.8954 7 15 6.10457 15 5C15 3.89543 15.8954 3 17 3C18.1046 3 19 3.89543 19 5Z"
-        fill="currentColor"
-      />
-      <path
-        d="M3.5 11C3.5 9.61929 4.61929 8.5 6 8.5H8C9.38071 8.5 10.5 9.61929 10.5 11V16C10.5 16.2761 10.2761 16.5 10 16.5H8.5V21C8.5 21.2761 8.27614 21.5 8 21.5H6C5.72386 21.5 5.5 21.2761 5.5 21V16.5H4C3.72386 16.5 3.5 16.2761 3.5 16V11Z"
-        fill="currentColor"
-      />
-      <path
-        d="M14.078 10.8439C14.3824 9.47439 15.5971 8.5 17 8.5C18.4029 8.5 19.6176 9.47439 19.922 10.8439L21.4881 17.8915C21.521 18.0396 21.4849 18.1946 21.39 18.3129C21.2951 18.4312 21.1517 18.5 21 18.5H18.5V21C18.5 21.2761 18.2761 21.5 18 21.5H16C15.7239 21.5 15.5 21.2761 15.5 21V18.5H13C12.8483 18.5 12.7049 18.4312 12.61 18.3129C12.5151 18.1946 12.479 18.0396 12.5119 17.8915L14.078 10.8439Z"
-        fill="currentColor"
-      />
-    </svg>
-  );
-}
-
+import type { SVGProps } from 'react';
+const SvgGenderHumanIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" viewBox="0 0 24 24" {...props}>
+    <path
+      fill="currentColor"
+      d="M9 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0M19 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0M3.5 11A2.5 2.5 0 0 1 6 8.5h2a2.5 2.5 0 0 1 2.5 2.5v5a.5.5 0 0 1-.5.5H8.5V21a.5.5 0 0 1-.5.5H6a.5.5 0 0 1-.5-.5v-4.5H4a.5.5 0 0 1-.5-.5zM14.078 10.844a2.993 2.993 0 0 1 5.844 0l1.566 7.048A.5.5 0 0 1 21 18.5h-2.5V21a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2.5H13a.5.5 0 0 1-.488-.608z"
+    />
+  </svg>
+);
 export default SvgGenderHumanIcon;

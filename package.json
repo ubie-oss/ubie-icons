@@ -7,50 +7,57 @@
   "version": "0.6.1",
   "description": "Icons used in Ubie products.",
   "exports": {
-    "browser": "./dist/esm/index.js",
-    "import": "./dist/esm/index.js",
-    "require": "./dist/cjs/index.js",
-    "node": "./dist/esm/index.js",
-    "default": "./dist/cjs/index.js"
+    ".": {
+      "import": "./dist/index.mjs",
+      "default": "./dist/index.js"
+    }
   },
-  "module": "dist/esm/index.js",
-  "main": "dist/cjs/index.js",
-  "types": "dist/cjs/index.d.ts",
+  "module": "dist/index.mjs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "sideEffects": false,
   "files": [
     "dist"
   ],
   "scripts": {
     "figma": "node ./scripts/figma.js",
     "build:svg": "svgr -d src assets",
-    "build:ts": "run-p build:ts:*",
-    "build:ts:esm": "tsc --project tsconfig.esm.json",
-    "build:ts:cjs": "tsc --project tsconfig.cjs.json",
+    "build:ts": "tsup",
     "build:copy-svgs": "test -d dist || mkdir dist && cp -R assets/*.svg dist",
     "build": "npm run build:svg && npm run build:ts && npm run build:copy-svgs",
     "prepublishOnly": "npm run build",
-    "storybook": "start-storybook -p 6006",
-    "build:storybook": "build-storybook"
+    "storybook": "storybook dev -p 6006",
+    "build:storybook": "storybook build"
   },
   "devDependencies": {
     "@babel/core": "^7.17.8",
-    "@storybook/addon-actions": "^6.4.20",
-    "@storybook/addon-essentials": "^6.4.20",
-    "@storybook/addon-interactions": "^6.4.20",
-    "@storybook/addon-links": "^6.4.20",
-    "@storybook/react": "^6.4.20",
-    "@storybook/testing-library": "^0.0.9",
-    "@svgr/cli": "^5.5.0",
-    "@types/react": "^17.0.22",
+    "@storybook/addon-actions": "^8.0.2",
+    "@storybook/addon-essentials": "^8.0.2",
+    "@storybook/addon-interactions": "^8.0.2",
+    "@storybook/addon-links": "^8.0.2",
+    "@storybook/addon-webpack5-compiler-swc": "^1.0.2",
+    "@storybook/react-webpack5": "^8.0.2",
+    "@svgr/cli": "^8.1.0",
+    "@types/react": "^18.2.67",
     "@ubie/prettier-config": "^0.1.0",
-    "babel-loader": "^8.2.4",
     "node-fetch": "^2.6.7",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.5.1",
-    "typescript": "^4.4.3"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "^8.0.2",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.2"
   },
-  "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+  "peerDependencies": {
+    "@types/react": "^17 || ^18",
+    "react": "^17 || ^18",
+    "react-dom": "^17 || ^18"
+  },
+  "peerDependenciesMeta": {
+    "@types/react": {
+      "optional": true
+    }
   },
   "publishConfig": {
     "access": "public"

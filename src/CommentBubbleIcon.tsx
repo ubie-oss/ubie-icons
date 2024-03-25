@@ -1,16 +1,12 @@
-import * as React from 'react';
-
-function SvgCommentBubbleIcon(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M8 17V19.6716L10.6716 17H20V5H4V17H8ZM4 19C2.89543 19 2 18.1046 2 17V5C2 3.89543 2.89543 3 4 3H20C21.1046 3 22 3.89543 22 5V17C22 18.1046 21.1046 19 20 19H11.5L8.5 22C7.5 23 6 22.5 6 21V19H4Z"
-        fill="currentColor"
-      />
-    </svg>
-  );
-}
-
+import type { SVGProps } from 'react';
+const SvgCommentBubbleIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" viewBox="0 0 24 24" {...props}>
+    <path
+      fill="currentColor"
+      fillRule="evenodd"
+      d="M8 17v2.672L10.672 17H20V5H4v12zm-4 2a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-8.5l-3 3c-1 1-2.5.5-2.5-1v-2z"
+      clipRule="evenodd"
+    />
+  </svg>
+);
 export default SvgCommentBubbleIcon;

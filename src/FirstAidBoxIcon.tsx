@@ -1,17 +1,13 @@
-import * as React from 'react';
-
-function SvgFirstAidBoxIcon(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
-      <path d="M13 16.5002V18H11V16.5002H9.5V14.5002H11V13H13V14.5002H14.5V16.5002H13Z" fill="currentColor" />
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M7 4V6H4C2.89543 6 2 6.89543 2 8V19C2 20.1046 2.89543 21 4 21H20C21.1046 21 22 20.1046 22 19V8C22 6.89543 21.1046 6 20 6H17V4C17 2.89543 16.1046 2 15 2H9C7.89543 2 7 2.89543 7 4ZM15 4H9V6H15V4ZM20 10V8H4V10H20ZM4 12H20V19H4V12Z"
-        fill="currentColor"
-      />
-    </svg>
-  );
-}
-
+import type { SVGProps } from 'react';
+const SvgFirstAidBoxIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" viewBox="0 0 24 24" {...props}>
+    <path fill="currentColor" d="M13 16.5V18h-2v-1.5H9.5v-2H11V13h2v1.5h1.5v2z" />
+    <path
+      fill="currentColor"
+      fillRule="evenodd"
+      d="M7 4v2H4a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-3V4a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2m8 0H9v2h6zm5 6V8H4v2zM4 12h16v7H4z"
+      clipRule="evenodd"
+    />
+  </svg>
+);
 export default SvgFirstAidBoxIcon;

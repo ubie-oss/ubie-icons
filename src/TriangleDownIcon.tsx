@@ -1,14 +1,10 @@
-import * as React from 'react';
-
-function SvgTriangleDownIcon(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
-      <path
-        d="M11.1251 19.5011L3.12061 5.3961C2.7624 4.76487 3.24512 4 4.00171 4H19.9983C20.7546 4 21.2373 4.76435 20.8797 5.39556L12.8876 19.5006C12.5104 20.1662 11.5027 20.1665 11.1251 19.5011Z"
-        fill="currentColor"
-      />
-    </svg>
-  );
-}
-
+import type { SVGProps } from 'react';
+const SvgTriangleDownIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" viewBox="0 0 24 24" {...props}>
+    <path
+      fill="currentColor"
+      d="M11.125 19.501 3.121 5.396C2.762 4.765 3.245 4 4 4h15.997c.757 0 1.24.764.882 1.396L12.888 19.5c-.378.665-1.385.665-1.763 0"
+    />
+  </svg>
+);
 export default SvgTriangleDownIcon;

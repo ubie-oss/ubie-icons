@@ -1,14 +1,10 @@
-import * as React from 'react';
-
-function SvgArrowARightIcon(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
-      <path
-        d="M21.5848 11.2033C22.1391 11.5997 22.1383 12.4241 21.5831 12.8194L14.568 17.8143C13.911 18.2821 13 17.8123 13 17.0057L13 15C13 15 13 15 13 15H3C2.44771 15 2 14.5523 2 14V10C2 9.44772 2.44771 9 3 9L13 9V6.99433C13 6.18679 13.9128 5.71722 14.5696 6.1869L21.5848 11.2033Z"
-        fill="currentColor"
-      />
-    </svg>
-  );
-}
-
+import type { SVGProps } from 'react';
+const SvgArrowARightIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" viewBox="0 0 24 24" {...props}>
+    <path
+      fill="currentColor"
+      d="M21.585 11.203a.993.993 0 0 1-.002 1.616l-7.015 4.995A.992.992 0 0 1 13 17.006V15H3a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1h10V6.994a.992.992 0 0 1 1.57-.807z"
+    />
+  </svg>
+);
 export default SvgArrowARightIcon;

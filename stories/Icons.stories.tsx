@@ -1,14 +1,12 @@
 import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
-
+import { Meta, StoryObj } from '@storybook/react';
 import { Icons } from './Icons';
 
 export default {
   title: 'Icons',
   component: Icons,
-} as ComponentMeta<typeof Icons>;
+} satisfies Meta<typeof Icons>;
 
-const Template: ComponentStory<typeof Icons> = (args) => <Icons {...args} />;
+type Story = StoryObj<typeof Icons>;
 
-export const Default = Template.bind({});
-Default.args = {};
+export const Default: Story = {};

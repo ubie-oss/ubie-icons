@@ -26,8 +26,7 @@
     "native"
   ],
   "scripts": {
-    "figma": "node ./scripts/figma.js",
-    "figma:bun": "bun scripts/figma.ts",
+    "figma": "bun scripts/figma.ts",
     "build:svg": "run-p build:svg:*",
     "build:svg:web": "svgr -d src assets",
     "build:svg:native": "svgr --native --template native-template.js -d src/native assets",

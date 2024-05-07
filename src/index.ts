@@ -37,6 +37,7 @@ export { default as CapsuleIcon } from './CapsuleIcon';
 export { default as CapsuleTabletIcon } from './CapsuleTabletIcon';
 export { default as CarIcon } from './CarIcon';
 export { default as CheckAIcon } from './CheckAIcon';
+export { default as CheckBFillIcon } from './CheckBFillIcon';
 export { default as CheckBIcon } from './CheckBIcon';
 export { default as CheckboxOffOutlineIcon } from './CheckboxOffOutlineIcon';
 export { default as CheckboxOnOutlineIcon } from './CheckboxOnOutlineIcon';

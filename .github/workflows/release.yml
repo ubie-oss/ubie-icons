@@ -47,7 +47,7 @@ jobs:
 
       - name: Set GitHub Release Note
         id: release_note
-        uses: actions/github-script@v6
+        uses: actions/github-script@v7
         with:
           script: |
             const result = await exec.getExecOutput(`gh api "/repos/{owner}/{repo}/releases/generate-notes" -f tag_name="${process.env.PACKAGE_VERSION}" --jq .body`, [], {
@@ -59,7 +59,7 @@ jobs:
 
       - name: Create Pull Request
         id: cpr
-        uses: peter-evans/create-pull-request@v4
+        uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: 'chore(release): 🤖 v${{ env.PACKAGE_VERSION }}'

@@ -126,6 +126,7 @@ export { default as MinusAIcon } from './MinusAIcon';
 export { default as MinusBIcon } from './MinusBIcon';
 export { default as MoveIcon } from './MoveIcon';
 export { default as MuteIcon } from './MuteIcon';
+export { default as MynumberCardIcon } from './MynumberCardIcon';
 export { default as NotificationIcon } from './NotificationIcon';
 export { default as NurseIcon } from './NurseIcon';
 export { default as OldManIcon } from './OldManIcon';

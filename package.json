@@ -67,6 +67,9 @@
   "peerDependenciesMeta": {
     "@types/react": {
       "optional": true
+    },
+    "react-native-svg": {
+      "optional": true
     }
   },
   "publishConfig": {

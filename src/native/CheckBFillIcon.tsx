@@ -5,14 +5,13 @@ interface ISvgProps extends SvgProps {
   xmlnsXlink?: string;
   xmlSpace?: string;
 }
-const SvgMaleSymbolIcon = (props: ISvgProps) => (
+const SvgCheckBFillIcon = (props: ISvgProps) => (
   <Svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} fill="none" viewBox="0 0 24 24" {...props}>
+    <Path fill="currentColor" d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10" />
     <Path
-      fill="currentColor"
-      fillRule="evenodd"
-      d="m17.586 5-6.11 6.11a6 6 0 1 0 1.414 1.414L19 6.414V10a1 1 0 1 0 2 0V4.001l-.001-.049A.996.996 0 0 0 20 3h-6a1 1 0 1 0 0 2zM8 20a4 4 0 1 0 0-8 4 4 0 0 0 0 8"
-      clipRule="evenodd"
+      fill="#fff"
+      d="M16.707 10.707a1 1 0 0 0-1.414-1.414L11 13.586l-2.293-2.293a1 1 0 0 0-1.414 1.414l3 3a1 1 0 0 0 1.414 0z"
     />
   </Svg>
 );
-export default SvgMaleSymbolIcon;
+export default SvgCheckBFillIcon;

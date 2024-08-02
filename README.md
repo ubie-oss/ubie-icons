@@ -4,8 +4,6 @@ Storybook: https://ubie-oss.github.io/ubie-icons/storybook-static/
 
 ## Installation
 
-### Web
-
 ```
 // with npm
 npm install @ubie/ubie-icons
@@ -14,35 +12,10 @@ npm install @ubie/ubie-icons
 yarn add @ubie/ubie-icons
 ```
 
-### React Native
-
-```
-// with npm
-npm install @ubie/ubie-icons react-native-svg
-
-// with yarn
-yarn add @ubie/ubie-icons react-native-svg
-```
-
 ## Usage
-
-### Web
 
 ```js
 import { Twitter } from '@ubie/ubie-icons';
-
-export const TwitterButton = () => (
-  <button type="button">
-    <Twitter />
-    Twitter
-  </button>
-);
-```
-
-### React Native
-
-```js
-import { Twitter } from '@ubie/ubie-icons/native';
 
 export const TwitterButton = () => (
   <button type="button">

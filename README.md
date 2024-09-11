@@ -1,15 +1,11 @@
 # Ubie Icons
 
-Storybook: https://ubie-oss.github.io/ubie-icons/storybook-static/
+Icons List：https://vitals.ubie.life/elements/icons/
 
 ## Installation
 
 ```
-// with npm
 npm install @ubie/ubie-icons
-
-// with yarn
-yarn add @ubie/ubie-icons
 ```
 
 ## Usage

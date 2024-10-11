@@ -194,3 +194,4 @@ export { default as WalkIcon } from './WalkIcon';
 export { default as WeightScaleIcon } from './WeightScaleIcon';
 export { default as WheelchairIcon } from './WheelchairIcon';
 export { default as WomanIcon } from './WomanIcon';
+export { default as WorkflowIcon } from './WorkflowIcon';

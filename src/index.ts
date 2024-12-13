@@ -125,6 +125,8 @@ export { default as MedicalFormIcon } from './MedicalFormIcon';
 export { default as MedicalHeartIcon } from './MedicalHeartIcon';
 export { default as MedicalSymbolFillIcon } from './MedicalSymbolFillIcon';
 export { default as MedicalSymbolOutlineIcon } from './MedicalSymbolOutlineIcon';
+export { default as MedicineSuppositoryIcon } from './MedicineSuppositoryIcon';
+export { default as MedicineSyrupIcon } from './MedicineSyrupIcon';
 export { default as MemoIcon } from './MemoIcon';
 export { default as MenuIcon } from './MenuIcon';
 export { default as MicIcon } from './MicIcon';

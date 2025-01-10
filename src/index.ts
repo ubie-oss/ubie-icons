@@ -110,6 +110,7 @@ export { default as LeaderHorizontalIcon } from './LeaderHorizontalIcon';
 export { default as LeaderVerticalIcon } from './LeaderVerticalIcon';
 export { default as LightIcon } from './LightIcon';
 export { default as LightOnIcon } from './LightOnIcon';
+export { default as LinkIcon } from './LinkIcon';
 export { default as LockIcon } from './LockIcon';
 export { default as LoginIcon } from './LoginIcon';
 export { default as LogoutIcon } from './LogoutIcon';

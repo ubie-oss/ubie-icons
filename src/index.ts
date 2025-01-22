@@ -2,6 +2,8 @@ export { default as AccountIcon } from './AccountIcon';
 export { default as AccountSettingIcon } from './AccountSettingIcon';
 export { default as AddressIcon } from './AddressIcon';
 export { default as AlertIcon } from './AlertIcon';
+export { default as AlertAIcon } from './AlertAIcon';
+export { default as AlertBIcon } from './AlertBIcon';
 export { default as AmbulanceIcon } from './AmbulanceIcon';
 export { default as ArrowADownIcon } from './ArrowADownIcon';
 export { default as ArrowALeftIcon } from './ArrowALeftIcon';

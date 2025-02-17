@@ -50,9 +50,9 @@
     "typescript": "^5.4.5"
   },
   "peerDependencies": {
-    "@types/react": "^17 || ^18",
-    "react": "^17 || ^18",
-    "react-dom": "^17 || ^18"
+    "@types/react": "^17 || ^18 || ^19",
+    "react": "^17 || ^18 || ^19",
+    "react-dom": "^17 || ^18 || ^19"
   },
   "peerDependenciesMeta": {
     "@types/react": {

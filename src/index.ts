@@ -207,3 +207,7 @@ export { default as WeightScaleIcon } from './WeightScaleIcon';
 export { default as WheelchairIcon } from './WheelchairIcon';
 export { default as WomanIcon } from './WomanIcon';
 export { default as WorkflowIcon } from './WorkflowIcon';
+export { default as BagIcon } from './BagIcon';
+export { default as BoxIcon } from './BoxIcon';
+export { default as CartIcon } from './CartIcon';
+export { default as YenIcon } from './YenIcon';

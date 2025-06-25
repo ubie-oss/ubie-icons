@@ -1,3 +1,7 @@
+export { default as BagIcon } from './BagIcon';
+export { default as BoxIcon } from './BoxIcon';
+export { default as CartIcon } from './CartIcon';
+export { default as YenIcon } from './YenIcon';
 export { default as AccountIcon } from './AccountIcon';
 export { default as AccountSettingIcon } from './AccountSettingIcon';
 export { default as AddressIcon } from './AddressIcon';

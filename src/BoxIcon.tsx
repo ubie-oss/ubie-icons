@@ -9,4 +9,4 @@ const SvgBoxIcon = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default SvgBoxIcon; 
+export default SvgBoxIcon;

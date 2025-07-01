@@ -13,4 +13,4 @@ const SvgCartIcon = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default SvgCartIcon; 
+export default SvgCartIcon;

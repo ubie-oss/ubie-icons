@@ -7,4 +7,4 @@ const SvgYenIcon = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default SvgYenIcon; 
+export default SvgYenIcon;

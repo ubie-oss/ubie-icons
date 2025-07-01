@@ -9,4 +9,4 @@ const SvgBagIcon = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default SvgBagIcon; 
+export default SvgBagIcon;

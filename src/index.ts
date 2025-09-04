@@ -1,3 +1,7 @@
+export { default as BagIcon } from './BagIcon';
+export { default as BoxIcon } from './BoxIcon';
+export { default as CartIcon } from './CartIcon';
+export { default as YenIcon } from './YenIcon';
 export { default as AccountIcon } from './AccountIcon';
 export { default as AccountSettingIcon } from './AccountSettingIcon';
 export { default as AddressIcon } from './AddressIcon';
@@ -183,6 +187,7 @@ export { default as SickIcon } from './SickIcon';
 export { default as SmartphoneIcon } from './SmartphoneIcon';
 export { default as SortAtozIcon } from './SortAtozIcon';
 export { default as SortIcon } from './SortIcon';
+export { default as SproutIcon } from './SproutIcon';
 export { default as SquareIcon } from './SquareIcon';
 export { default as StarFillIcon } from './StarFillIcon';
 export { default as StarHalfIcon } from './StarHalfIcon';

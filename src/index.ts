@@ -183,6 +183,7 @@ export { default as SickIcon } from './SickIcon';
 export { default as SmartphoneIcon } from './SmartphoneIcon';
 export { default as SortAtozIcon } from './SortAtozIcon';
 export { default as SortIcon } from './SortIcon';
+export { default as SproutIcon } from './SproutIcon';
 export { default as SquareIcon } from './SquareIcon';
 export { default as StarFillIcon } from './StarFillIcon';
 export { default as StarHalfIcon } from './StarHalfIcon';

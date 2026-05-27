@@ -19,13 +19,14 @@
   "files": [
     "dist"
   ],
+  "packageManager": "pnpm@11.1.1",
   "scripts": {
     "figma": "node ./scripts/figma.js",
     "build:svg": "svgr -d src assets",
     "build:ts": "tsup",
     "build:copy-svgs": "test -d dist || mkdir dist && cp -R assets/*.svg dist",
-    "build": "npm run build:svg && npm run build:ts && npm run build:copy-svgs",
-    "prepublishOnly": "npm run build",
+    "build": "run-s build:svg build:ts build:copy-svgs",
+    "prepublishOnly": "pnpm run build",
     "storybook": "storybook dev -p 6006",
     "build:storybook": "storybook build"
   },

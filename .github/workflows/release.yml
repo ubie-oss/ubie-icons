@@ -45,7 +45,7 @@ jobs:
         run: pnpm run build
 
       - name: Release
-        run: pnpm exec release-it -i ${{ github.event.inputs.semver }} --ci
+        run: pnpm dlx release-it -i ${{ github.event.inputs.semver }} --ci
 
       - name: Set PACKAGE_VERSION
         run: echo "PACKAGE_VERSION=$(cat package.json | jq -r .version)" >> $GITHUB_ENV

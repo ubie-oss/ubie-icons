@@ -1,5 +1,6 @@
 {
   "name": "@ubie/ubie-icons",
+  "packageManager": "pnpm@10.28.2+sha512.41872f037ad22f7348e3b1debbaf7e867cfd448f2726d9cf74c08f19507c31d2c8e7a11525b983febc2df640b5438dee6023ebb1f84ed43cc2d654d2bc326264",
   "repository": {
     "type": "git",
     "url": "https://github.com/ubie-oss/ubie-icons.git"
@@ -24,8 +25,8 @@
     "build:svg": "svgr -d src assets",
     "build:ts": "tsup",
     "build:copy-svgs": "test -d dist || mkdir dist && cp -R assets/*.svg dist",
-    "build": "npm run build:svg && npm run build:ts && npm run build:copy-svgs",
-    "prepublishOnly": "npm run build",
+    "build": "pnpm run build:svg && pnpm run build:ts && pnpm run build:copy-svgs",
+    "prepublishOnly": "pnpm run build",
     "storybook": "storybook dev -p 6006",
     "build:storybook": "storybook build"
   },
@@ -61,6 +62,12 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@swc/core",
+      "esbuild"
+    ]
   },
   "license": "MIT"
 }

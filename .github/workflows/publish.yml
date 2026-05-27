@@ -22,12 +22,19 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Use Node.js 20
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11.1.1
+
+      - name: Use Node.js 22
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
+          cache: pnpm
+
       - name: Install dependencies
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Git Identity
         run: |
@@ -57,8 +64,8 @@ jobs:
         if: steps.tag_check.outputs.exists_tag == 'false'
         run: |
           echo '//registry.npmjs.org/:_authToken=${NPM_TOKEN}' > .npmrc
-          npm run build
-          npm publish
+          pnpm run build
+          pnpm publish --no-git-checks
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.UBIE_NPM_TOKEN }}

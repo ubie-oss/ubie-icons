@@ -8,6 +8,16 @@ Icons List：https://vitals.ubie.life/elements/icons/
 npm install @ubie/ubie-icons
 ```
 
+## Development
+
+This repository uses [pnpm](https://pnpm.io/) for package management.
+
+```bash
+pnpm install
+pnpm run build
+pnpm run storybook
+```
+
 ## Usage
 
 ```js

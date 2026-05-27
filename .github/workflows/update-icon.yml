@@ -10,18 +10,29 @@ jobs:
         with:
           ref: ${{ github.event.pull_request.head.ref }}
           fetch-depth: 0
-      - name: Use Node.js 20
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11.1.1
+
+      - name: Use Node.js 22
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
+          cache: pnpm
+
       - name: Install dependencies
-        run: npm ci
+        run: pnpm install --frozen-lockfile
+
       - name: Update svg Icons
-        run: FIGMA_TOKEN=${{ secrets.FIGMA_TOKEN }} FIGMA_FILE_KEY=${{ secrets.FIGMA_FILE_KEY }} npm run figma
+        run: FIGMA_TOKEN=${{ secrets.FIGMA_TOKEN }} FIGMA_FILE_KEY=${{ secrets.FIGMA_FILE_KEY }} pnpm run figma
+
       - name: Generate React Components
-        run: npm run build:svg
+        run: pnpm run build:svg
+
       - name: Format
-        run: npx prettier ./src --write
+        run: pnpm exec prettier ./src --write
+
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
         with:
